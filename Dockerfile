@@ -1,4 +1,4 @@
-FROM tomcat:10-jdk21-temurin
+FROM tomcat:11-jdk21-temurin
 LABEL org.opencontainers.image.source="https://github.com/fidransky/tomcat"
 RUN mv /usr/local/tomcat/webapps /usr/local/tomcat/webapps.empty && \
 	mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
